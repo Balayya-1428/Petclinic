@@ -2,7 +2,7 @@
 FROM adoptopenjdk:11-jre-hotspot
 
 # Copy the war file to the image
-COPY petclinic.war /tmp/petclinic.war
+COPY /var/lib/jenkins/workspace/first/target/petclinic.war /tmp/petclinic.war
 
 # Expose the port your application listens on
 EXPOSE 8085
