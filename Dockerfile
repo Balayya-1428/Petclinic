@@ -1,5 +1,5 @@
 # Use a Java base image
-FROM adoptopenjdk:11-jre-hotspot
+FROM amazoncorretto:17
 
 # Copy the war file to the image
 COPY target/petclinic.war petclinic.war
